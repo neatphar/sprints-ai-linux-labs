@@ -51,7 +51,7 @@ do
         "16")
             chmod 631 /etc/passwd-
             chmod u=rw,g=wx,o=x /etc/passwd-
-            umask 146 # 777 - 631
+            umask 035 # 666 - 631
             echo "What is the maximum permission a file can have by default? 666" # 666 - umask
             echo "What is that for directory? 777" # 777 - umask
             umask 777
